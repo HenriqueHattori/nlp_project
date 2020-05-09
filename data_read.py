@@ -20,6 +20,10 @@ reviews_comment = reviews.dropna()
 # print(reviews_comment)
 # print(reviews_comment['Group Name'].unique())
 
+# extract external data
+def extract_data():
+    reviews = pd.read_excel('data1.xlsm',sheet_name='Result', index_col=0)
+    return reviews.dropna()
 
 # remove punctuation from text(sentece)
 def remove_punctuation(text):
