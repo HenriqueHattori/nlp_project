@@ -29,20 +29,6 @@ def send_dados_to_picle(dados):
 dados = pd.read_pickle('dados.pkl') #le o dataframe com os resultados do spacy
 
 
-
-########################################################################################
-## cada linha do docs_vector é uma lista de vetores,
-## para somar dpercorrer a lista e somar?
-## transofrmar cada linha em um vetor
-## - possivel solucao
-## https://stackoverflow.com/questions/27516849/how-to-convert-list-of-numpy-arrays-into-single-numpy-array
-##
-##
-##
-# dados['Docs_vector']
-# dados['Docs_sum_vector'] = dados['Docs_vector'].apply(lambda x: np.sum(x,axis = ))
-
-
 # dados.to_excel('teste.xlsx')
 arr = dados['Docs_vector'].values
 # t = arr[0]
@@ -53,7 +39,6 @@ arr = dados['Docs_vector'].values
 to_cluster_vector=[]
 # soma todos os vetores palavras do commentario
 for comment in dados['Docs_vector']:
-
     sum_sent_vector=0
     for word_vector in comment:
         sum_sent_vector= sum_sent_vector+word_vector
