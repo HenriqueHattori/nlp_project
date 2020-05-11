@@ -2,7 +2,7 @@
 from data_read import *
 
 # External library
-import numpy as np
+#import numpy as np
 from sklearn.cluster import KMeans
 from sklearn.datasets.samples_generator import make_blobs
 import matplotlib.pyplot as plt
@@ -12,7 +12,7 @@ from yellowbrick.cluster import KElbowVisualizer
 
 # Importing data
 #print(extract_data())
-X,Y = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)
+X,Y = make_blobs(n_samples=300, centers=6, cluster_std=0.60, random_state=0)
 
 # Elbow method:
 def elbow_method(X):
