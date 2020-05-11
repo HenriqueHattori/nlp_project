@@ -37,4 +37,4 @@ def clusterize(X):
 
 # print(elbow_method(X))
 # clusterize(X)
-
+# print(X.dtype)
