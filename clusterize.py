@@ -38,3 +38,8 @@ def clusterize(X):
 #elbow_method(X)
 clusterize(X)
 
+
+# print(elbow_method(X))
+# clusterize(X)
+# print(X.dtype)
+
