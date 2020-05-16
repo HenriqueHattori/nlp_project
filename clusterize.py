@@ -36,6 +36,11 @@ def clusterize(X):
 		plt.scatter(centroid[0],centroid[1],c='r')
 	plt.show()
 
+#elbow_method(X)
+clusterize(X)
+
+
 # print(elbow_method(X))
 # clusterize(X)
 # print(X.dtype)
+
