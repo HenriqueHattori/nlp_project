@@ -32,6 +32,7 @@ def clusterize(X):
 	centroids = kmeans.cluster_centers_
 	plt.scatter(X[:,0], X[:,1])
 	for centroid in centroids:
+		print(centroid)
 		plt.scatter(centroid[0],centroid[1],c='r')
 	plt.show()
 
