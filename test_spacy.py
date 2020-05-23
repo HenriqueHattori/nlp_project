@@ -31,6 +31,7 @@ dados = pd.read_pickle('dados.pkl') #le o dataframe com os resultados do spacy
 
 # dados.to_excel('teste.xlsx')
 arr = dados['Docs_vector'].values
+# print(dados['Docs_vector'])
 to_cluster_vector=[]
 # soma todos os vetores palavras do commentario
 for comment in dados['Docs_vector']:
@@ -50,4 +51,4 @@ for comment in dados['Docs_vector']:
 t2 = np.stack(to_cluster_vector,axis=0)
 # print(t2)
 clusterize.clusterize(t2)
-
+#

@@ -37,7 +37,7 @@ def clusterize(X):
 	plt.show()
 
 #elbow_method(X)
-clusterize(X)
+# clusterize(X)
 
 
 # print(elbow_method(X))
